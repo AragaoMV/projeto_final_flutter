@@ -1,16 +1,27 @@
-import 'package:flutter/cupertino.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:pokemon/home_screen.dart';
+import 'common/repositories/pokemon_repository.dart';
+import 'features/pokedex/route.dart';
 
-void main(){
-  runApp(Pokemon());
+void main() {
+  runApp(MyApp());
 }
 
-class Pokemon extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      title: 'Pokedex',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
+      home: PokedexRoute(
+        repository: PokemonRepository(
+          dio: Dio(),
+        ),
+      ),
+      debugShowCheckedModeBanner: false,
     );
+
   }
 }
