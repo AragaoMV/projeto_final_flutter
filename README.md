@@ -1,6 +1,6 @@
 # projeto_final_flutter
 
-A new Flutter project.
+Projeto de Pokedex usando dio.
 
 ## Getting Started
 
