@@ -1,6 +1,6 @@
-# projeto_final_flutter
+# FlutterDex
 
-Projeto de Pokedex usando dio.
+Projeto final de Flutter, uma aplicação onde lista todos os 151 pokémon e mostra suas caracteristicas. 
 
 ## Getting Started
 
